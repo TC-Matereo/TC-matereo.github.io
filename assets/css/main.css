@@ -1,19 +1,22 @@
-/* Ensure banner text is visible on page load */
+/* Original CSS before any modifications */
 body.is-preload #banner > .inner {
-    opacity: 1 !important;
-    filter: none !important;
-    transform: none !important;
+    -moz-filter: blur(0.125em);
+    -webkit-filter: blur(0.125em);
+    -ms-filter: blur(0.125em);
+    filter: blur(0.125em);
+    -moz-transform: translateX(-0.5em);
+    -webkit-transform: translateX(-0.5em);
+    -ms-transform: translateX(-0.5em);
+    transform: translateX(-0.5em);
+    opacity: 0;
 }
 
-/* Adjust slogan font size and ensure visibility */
 #banner h1 {
-    font-size: 2.5rem !important;
-    text-align: center;
-    color: white !important;
+    font-size: 3.25em;
 }
 
-/* Reduce the banner overlay opacity to make text readable */
 #banner:after {
-    opacity: 0.6 !important;
+    background-color: #004B72;
+    opacity: 0.85;
 }
-## Updated at: 2025-02-07T18:52:11.862+00:00
+## Updated at: 2025-02-07T18:53:14.961+00:00
